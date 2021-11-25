@@ -1,0 +1,5 @@
+GET http://localhost:3333/imoveis/buscaTipo/Apartamento HTTP/1.1;
+
+
+
+GET http://localhost:3333/buscaTipo/apartamento HTTP/1.1

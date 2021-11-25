@@ -19,13 +19,14 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "typeorm": "ts-node ./node_modules/typeorm/cli.js --config /src/database/ormconfig.ts"
+    "typeorm": "ts-node ./node_modules/typeorm/cli.js --config C:/Users/USUARIO/Documents/api-mysql-rdg/src/database/ormconfig.ts"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^8.0.0",
+    "convert-excel-to-json": "^1.7.0",
     "helmet": "^4.6.0",
     "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",

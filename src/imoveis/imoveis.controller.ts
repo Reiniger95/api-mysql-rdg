@@ -17,6 +17,23 @@ export class ImoveisController {
 
   @Get('importacao')
   importacao(): any {
-    return this.ImoveisService.importacao()
+return this.imoveisService.importacao()
   }
+  @Get('buscaTipo/:tipo')
+  async buscaTipo(@Param() params): Promise<any> {
+    const response = await this.imoveisService.buscaTipo(
+      params.tipo
+    )
+    
+   return response
+  }
+  @Get('buscaTipo2/:tipo')
+  async buscaTipo2(@Param() params): Promise<any> {
+    const response = await this.imoveisService.buscaTipo2(
+      params.tipo
+    )
+    
+   return response
+  }
+
 }

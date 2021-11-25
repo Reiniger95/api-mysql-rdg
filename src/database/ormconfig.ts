@@ -13,7 +13,7 @@ const connectionOptions: ConnectionOptions = {
   database: process.env.DATABASE_NAME,
   entities: [join(__dirname, '/../**/*.entity{.ts,.js}')],
   // We are using migrations, synchronize should be set to false.
-  synchronize: true,
+  synchronize: false,
   dropSchema: false,
   connectTimeout: 1000000000,
   acquireTimeout: 1000000000,
@@ -25,7 +25,8 @@ const connectionOptions: ConnectionOptions = {
 
   migrations: [join(__dirname, 'migrations/*{.ts,.js}')],
   cli: {
-    migrationsDir: 'src/database/migrations'
+    migrationsDir:
+      'C:/Users/USUARIO/Documents/api-mysql-rdg/src/database/migrations'
   }
 }
 
